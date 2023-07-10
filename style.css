@@ -1,0 +1,106 @@
+/* *{
+    padding :0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+.loader{
+    position: relative;
+    width:100px;
+    height: 100px;
+}
+
+.triagle1{
+ position: absolute;
+ height: 0;
+ width: 0;
+ border: 80px solid transparent;
+ border-right: 80px solid white;   
+ animation: triagle1 2s linear infinite 0.5s;
+}
+
+
+.triagle2{
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: 80px solid transparent;
+    border-left: 80px solid white;
+    animation: triagle2 2s linear infinite 0.5s;
+   
+}
+
+
+@keyframes triagle1{
+    0%, 25% {
+        transform:rtate(0deg);
+    }
+
+    50%, 75% {
+        transform:rtate(90deg);
+    }
+
+    0%, 25% {
+        transform:rtate(180deg);
+    }
+}
+
+
+@keyframes triagle2{
+    0%, 25% {
+        transform:rtate(90deg);
+    }
+
+    50%, 75% {
+        transform:rtate(180deg);
+    }
+
+    0%, 25% {
+        transform:rtate(360deg);
+    }
+} */
+
+
+body {
+    background:red;
+}
+  
+  .main{
+    width:330px;
+    height:330px;
+    border:3px solid black;
+    position:absolute;
+    top:0; bottom:0; left:0;right:0;
+    margin:auto;
+    border-radius:50%; 
+  }
+  
+  .circle{
+    width:35px;
+    height:35px;
+    background:white;
+    border-radius:50%;
+    position:absolute;
+    top:0; bottom:0; left:0;right:0;
+    overflow:hidden;
+    margin:auto;
+    animation: circle 6s linear infinite;
+  }
+  
+  
+  @keyframes circle{
+    0%{
+      transform:rotate(0deg)
+                translate(-165px)
+                rotate(0deg);
+    
+    }
+    100%{
+      transform:rotate(360deg)
+                translate(-165px)
+                rotate(-360deg);
+    }
+  }
+  
+  
